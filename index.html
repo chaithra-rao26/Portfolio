@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><u><a href="#about"><b>About</b></a></u></li>
+                <li><u><a href="#projects"><b>Projects</b></a></u></li>
+                <li><u><a href="#contact-info"><b>Contact</b></a></u></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="name">
+        <pre id="hb"><b>Hi, I am Chaithra R
+Software QA Engineer
+        </b></pre>
+        <button onclick="window.location.href='chaithraR.pdf'" class="botao">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mysvg">
+                <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#f1f1f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <span class="texto"><b>Resume</b></span>
+        </button> 
+    </section>
+    <br></br>
+    <section id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <br></br>
+            <p>
+                I’m Chaithra R, a Software QA Engineer with over 2 years of experience in manual testing for Salesforce Commerce Cloud and Salesforce Order Management. I specialize in delivering high-quality software solutions and seamless user experiences. Skilled in testing methodologies, I’m passionate about leveraging my technical expertise to drive product excellence. Connect with me via the social links below.
+           </p>
+        </div>
+        <div class="imgtag">
+            <img id="round-image" src="ChaithraR.jpeg" height="50px" width="50px" alt="Adishesha R"/>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h1><u><b>Technical Skills</b></u></h1>
+        <ul class="skill-list">
+            <li><b><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java Logo">Java</b></li>
+            <li><b><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">HTML</b></li>
+            <li><b><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">CSS</b></li>
+            <li><b><img src="https://cdn-icons-png.flaticon.com/512/1046/1046652.png" alt="Manual Testing Logo">Manual Testing</b></li>
+            <li><b><img src="https://cdn-icons-png.flaticon.com/512/1046/1046652.png" alt="Manual Testing Logo">MySql</b></li>
+        </ul>
+    </section>
+    
+
+    <section id="projects">
+        <h1><u><b>Roles and Responsibility</b></u></h1><br>
+        <h2><u>As a Quality Analyst</u></h2><br>
+        <h3><u>Client Description:</u></h3> This client is a US-based company headquartered in Watsonville, California. It operates primarily in the marine retail sector, offering a wide range of boating, fishing, and marine products through its retail stores and e-commerce platform. The company has about 247 retail stores in North America, and its largest stores feature more than 100,000 products.<br><br>
+
+        <div class="projects-container">
+            <div class="project">
+                    <h2>Salesforce Commerce Cloud (SFCC) & Salesforce Order Management (SFOM)</h2><br>
+                    <ul>
+                        <li>Created comprehensive manual test cases based on functional specifications and collaborated with stakeholders, including developers and business analysts, to understand client requirements, acceptance criteria, and user stories related to the features.</li>
+                        <li>Ensured that test cases addressed positive, negative, edge cases, and alternative flows to achieve thorough test coverage. Documented test data requirements and created the necessary test data sets for executing the test cases.</li>
+                        <li>Logged defects accurately and promptly using a defect tracking tool (e.g., JIRA), providing clear reproduction steps, screenshots, and relevant logs. Prioritized defects based on their severity and impact on business operations or user experience.</li>
+                    </ul>
+                </p>  </div><div class="project">
+                <h2>Salesforce Commerce Cloud (SFCC)</h2><br>
+                <p>
+                    <ul>
+                        <li>Executed manual test cases to validate SFCC functionalities such as product catalog management, search capabilities, cart and checkout processes, promotions, and third-party system integrations, while also verifying data integrity and consistency across SFCC and integrated platforms.</li>
+                        <li>Performed regression testing to confirm that new enhancements or bug fixes do not negatively affect existing SFCC functionalities, and maintained regression test suites to reflect changes and updates in the SFCC environment.</li>
+                    </ul>
+                </p>  </div><div class="project">
+                <h2>Salesforce Order Management (SFOM)</h2><br>
+                <p>
+                    <ul>
+                        <li>Conducted manual testing to validate SFOM functionalities within the Salesforce environment, ensuring accurate order workflows and integration with ERP systems, payment gateways, and shipping providers.</li>
+                        <li>Verified the entire order life cycle, including order creation, fulfillment, and tracking, ensuring integration with other Salesforce products and external systems to guarantee smooth order processing and improve the customer experience.</li>
+                    </ul>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact-info">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="7310114d-84bd-453d-b110-0a04ed4fd3c7">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="description">Message:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <section id="contact-inform">
+        <ul>
+            <li>
+                <a href="https://github.com/chaithra-rao26" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/chaithra-r-7a9a57192" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" />
+                </a>
+            </li>
+            <li>
+                <a href="mailto:chaithrar741@gmail.com">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Gmail_Icon_%282013-2020%29.svg" alt="Email Logo" />
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Chaithra R</p>
+    </footer>
+</body>
+</html>
